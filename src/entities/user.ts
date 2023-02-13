@@ -17,9 +17,9 @@ export class User {
 
   constructor(props: UserProps) {
     const { dateBirth } = props;
-    const currentDate = new Date();
-    currentDate.setDate(currentDate.getUTCFullYear() - 18);
-    if (dateBirth < currentDate) {
+    const minimunAge = new Date();
+    minimunAge.setFullYear(minimunAge.getUTCFullYear() - 18);
+    if (dateBirth > minimunAge) {
       throw new Error("Invalid date birth");
     }
     this.props = props;

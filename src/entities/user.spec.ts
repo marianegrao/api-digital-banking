@@ -2,13 +2,13 @@ import { expect, test } from "vitest";
 import { User } from "./user";
 
 test("create a user", () => {
-  const currentDate = new Date();
-  currentDate.setDate(currentDate.getUTCFullYear() - 18);
+  const dateBirth = new Date();
+  dateBirth.setFullYear(dateBirth.getUTCFullYear() - 18);
   const user = new User({
     id: "unique id",
     name: "Jhon Doe",
     cpf: "0122",
-    dateBirth: currentDate,
+    dateBirth,
     telephone: "12152",
     email: "email.com",
     password: "122",
@@ -18,11 +18,10 @@ test("create a user", () => {
 });
 
 test("cannot create a user with minimum age less than 18 years old", () => {
-  const currentDate = new Date();
   expect(() => {
     return new User({
       id: "unique id",
-      name: "Jhon Doe",
+      name: "Jhon Doee",
       cpf: "0122",
       dateBirth: new Date(),
       telephone: "12152",
