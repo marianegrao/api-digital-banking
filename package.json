@@ -1,0 +1,24 @@
+{
+  "name": "digital-banking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "gitmoji -i && git commit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marianegrao/api-digital-banking.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marianegrao/api-digital-banking/issues"
+  },
+  "homepage": "https://github.com/marianegrao/api-digital-banking#readme",
+  "dependencies": {
+    "gitmoji-cli": "^8.0.0"
+  }
+}
