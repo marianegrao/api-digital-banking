@@ -1,5 +1,5 @@
 import { describe, expect, it, test } from "vitest";
-import { CreateUser } from "./create-user";
+import { CreateUser } from "./CreateUser";
 
 describe("Create User", () => {
   it("cannot create a user with minimum age less than 18 years old", async () => {

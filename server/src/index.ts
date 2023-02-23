@@ -1,9 +1,12 @@
 import express from "express";
+import { routes } from "./routes";
 
-export const app = express();
+const app = express();
 
 app.use(express.json());
 
-app.post("/start", (req, res) => {
-  return res.status(201).send();
+app.use(routes);
+
+app.listen(3333, () => {
+  console.log("HTTP server running!");
 });

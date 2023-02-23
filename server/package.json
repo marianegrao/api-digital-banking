@@ -4,8 +4,7 @@
   "description": "###### tags: `api` `backend`",
   "main": "index.js",
   "scripts": {
-    "test": "vitest",
-    "commit": "cz"
+    "test": "vitest"
   },
   "repository": {
     "type": "git",
@@ -34,12 +33,6 @@
     "vitest": "^0.27.1"
   },
   "dependencies": {
-    "@prisma/client": "^4.10.1",
-    "commitizen": "^4.2.6"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
+    "@prisma/client": "^4.10.1"
   }
 }
