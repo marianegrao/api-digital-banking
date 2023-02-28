@@ -8,4 +8,7 @@ export class PrismaUsersRepository implements UsersRepository {
       data,
     });
   }
+  async update(data: IUser) {
+    // await prisma.user.update();
+  }
 }
